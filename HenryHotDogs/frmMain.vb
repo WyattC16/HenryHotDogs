@@ -11,7 +11,7 @@
         End If
         Dim index As Int32 = OrderTabs.TabPages.Count
         Dim tabPage As TabPage = New TabPage()
-        tabPage.Controls.Add(AddForm(frmOrder))
+        tabPage.Controls.Add(AddForm(new FrmOrder()))
         tabPage.Text = $"Order #" & index
         OrderTabs.TabPages.Insert(index - 1, tabPage)
         e.Cancel = True
