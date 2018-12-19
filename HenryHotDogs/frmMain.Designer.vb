@@ -26,7 +26,6 @@ Partial Class FrmMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnGenerateBill = New System.Windows.Forms.Button()
         Me.OrderTabs = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.newTab = New System.Windows.Forms.TabPage()
         Me.txtOutput = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1.SuspendLayout
@@ -81,23 +80,12 @@ Partial Class FrmMain
         Me.OrderTabs.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.OrderTabs.Controls.Add(Me.TabPage1)
         Me.OrderTabs.Controls.Add(Me.newTab)
         Me.OrderTabs.Location = New System.Drawing.Point(3, 43)
         Me.OrderTabs.Name = "OrderTabs"
         Me.OrderTabs.SelectedIndex = 0
         Me.OrderTabs.Size = New System.Drawing.Size(321, 87)
         Me.OrderTabs.TabIndex = 3
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(313, 61)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Order #1"
-        Me.TabPage1.UseVisualStyleBackColor = true
         '
         'newTab
         '
@@ -139,7 +127,6 @@ End Sub
     Friend WithEvents Label1 As Label
     Friend WithEvents btnGenerateBill As Button
     Friend WithEvents OrderTabs As TabControl
-    Friend WithEvents TabPage1 As TabPage
     Friend WithEvents newTab As TabPage
     Friend WithEvents txtOutput As TextBox
 End Class

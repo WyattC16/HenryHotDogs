@@ -3,18 +3,23 @@
     Dim ReadOnly _orderForms As List(Of FrmOrder) = New List(Of FrmOrder)()
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TabPage1.Controls.Add(AddForm(frmOrder))
+        AddTab()
+        OrderTabs.SelectedTab = OrderTabs.TabPages.Item(0)
     End Sub
     Private Sub OrderTabs_Selecting(sender As Object, e As TabControlCancelEventArgs) Handles OrderTabs.Selecting
         If OrderTabs.SelectedTab.TabIndex <> 1 Then
             Return
         End If
+        AddTab()
+        e.Cancel = True
+    End Sub
+
+    Private Sub AddTab()
         Dim index As Int32 = OrderTabs.TabPages.Count
         Dim tabPage As TabPage = New TabPage()
         tabPage.Controls.Add(AddForm(new FrmOrder()))
         tabPage.Text = $"Order #" & index
         OrderTabs.TabPages.Insert(index - 1, tabPage)
-        e.Cancel = True
     End Sub
     
     Private Function AddForm(frm as frmOrder) As Form
