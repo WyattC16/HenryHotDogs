@@ -50,6 +50,9 @@ Partial Class FrmOrder
         '
         'ComboBox1
         '
+        Me.ComboBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.ComboBox1.FormattingEnabled = true
         Me.ComboBox1.Items.AddRange(New Object() {"Hot Dog"})
         Me.ComboBox1.Location = New System.Drawing.Point(3, 3)
@@ -60,6 +63,9 @@ Partial Class FrmOrder
         '
         'ComboBox2
         '
+        Me.ComboBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.ComboBox2.FormattingEnabled = true
         Me.ComboBox2.Items.AddRange(New Object() {"Fries"})
         Me.ComboBox2.Location = New System.Drawing.Point(105, 3)
@@ -70,6 +76,9 @@ Partial Class FrmOrder
         '
         'ComboBox3
         '
+        Me.ComboBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.ComboBox3.FormattingEnabled = true
         Me.ComboBox3.Items.AddRange(New Object() {"Coke"})
         Me.ComboBox3.Location = New System.Drawing.Point(207, 3)
